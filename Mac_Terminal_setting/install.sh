@@ -48,6 +48,7 @@ git push --set-upstream origin master
 #### vim ####
 cp $work_dir/Mac_Terminal_setting/.vim ~/.vim
 cp $work_dir/Mac_Terminal_setting/.vimrc ~/.vimrc
+## type ":source ~/.vimrc", then ":PlugInstall" in any vim"
 
 #### oh-my-zsh ####
 ## Xcode required
