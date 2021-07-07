@@ -1,8 +1,12 @@
-id=sungbeenpark
-pw=na6607!!ms
+## HPC CNIR00 (CNIR00~CNIR19) 외부 IP
+115.145.185.182
 
-## 외부IP 직접 접속
-ssh -Y $id@10.201.185.39
+## my ID on CNIR00
+sungbeenpark
 
-## 내부IP 직접 접속
-ssh -Y $id@115.145.185.182
+## the password
+na6607!!ms
+
+## CNIR05 내부 IP:(service port)
+10.201.185.39:5000
+
