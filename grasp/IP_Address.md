@@ -83,7 +83,7 @@
 	프로토콜: TCP
 	IP주소/내부포트: 192.168.219.124
 	포트: 22
-	![IMG](https://github.com/psb629/Sungbeen/blob/master/grasp/images/IMG_0090.JPG)
+![IMG](https://github.com/psb629/Sungbeen/blob/master/grasp/images/IMG_0090.JPG)
 
 이처럼 외부에서 접속 시 어떤 호스트의 어떤 서비스포트에 연결을 해주는지 설정을 해주는 것을 포트포워딩이라 합니다.
 
