@@ -90,26 +90,7 @@ source activate $env_name
 is_env_sampark=`conda info | grep sampark | wc -l`
 if [ $is_env_sampark -gt 0 ]; then
 	echo "ready to pip install modules at env '${env_name}'"
-	pip install numpy
-	pip install pandas
-	pip install jupyter notebook
-	pip install scipy
-	pip install sklearn
-	pip install nilearn
-	pip install matplotlib 
-	pip install seaborn
-	pip install statsmodels
-	pip install plotly
-	pip install psutil
-	pip install pympler
-	## pycortex
-	pip install setuptools wheel Cython
-	pip install pycortex
-	## Jiwoong Park
-	pip install tables
-	pip install nibabel
- #	pip install nltk
- #	pip install tikreg
+	pip install -r modules.txt
 	## generate a new kernel
 	python -m ipykernel install --user --name $env_name --display-name $env_name
 	## check the package installing

@@ -1,0 +1,23 @@
+## basic modules
+numpy
+pandas
+jupyter
+notebook
+ipykernel
+scipy
+sklearn
+nilearn
+matplotlib 
+seaborn
+statsmodels
+plotly
+# psutil
+# pympler
+## pycortex
+# setuptools wheel Cython
+# pycortex
+## Jiwoong Park
+# tables
+# nibabel
+# nltk
+# tikreg
