@@ -1,11 +1,13 @@
 #!/bin/zsh
 
+## Define a repository
+rep=labs
+
 ## Define Git directory (root)
 git_dir=~/Github
  #mkdir -p -m 755 $git_dir
 
 ## Define work directory
-rep=Sungbeen
 work_dir=$git_dir/$rep
 cd $work_dir
 
