@@ -54,12 +54,13 @@ cp $work_dir/Mac_Terminal_setting/.vimrc ~/.vimrc
 ## Xcode required
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 cat $work_dir/Mac_Terminal_setting/.zshrc >>~/.zshrc
-## zsh-syntax-highlighting
-brew install zsh-syntax-highlighting
-cd $git_dir
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
-echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
-source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+## plugins
+### zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+### zsh-autosuggestions
+git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+"plugins=(git "
+"plugins=(git zsh-syntax-highlighting zsh-autosuggestions "
 
 #### python 3 ####
 brew install python
@@ -80,7 +81,7 @@ source ~/.zshrc
 pip install --upgrade pip
 ## make environment
 env_name=sampark
-conda create --name $env_name python=3.7
+conda create --name $env_name python=3
 conda info --env
 ## remove enviroment
  #conda remove --name $env_name --all
