@@ -55,12 +55,15 @@ cp $work_dir/Mac_Terminal_setting/.vimrc ~/.vimrc
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 cat $work_dir/Mac_Terminal_setting/.zshrc >>~/.zshrc
 ## plugins
+zsh=~/.zshrc
+cp -n $zsh ~/.zshrc~
 ### zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ### zsh-autosuggestions
 git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
-"plugins=(git "
-"plugins=(git zsh-syntax-highlighting zsh-autosuggestions "
+### renew
+cat $zsh | sed -e "s/plugins=(git/plugins=(git zsh-syntax-highlighting zsh-autosuggestions/" >$zsh
+### zsh-syntax-highlighting
 
 #### python 3 ####
 brew install python
