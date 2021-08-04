@@ -86,6 +86,7 @@ pip install --upgrade pip
 env_name=sampark
 conda create --name $env_name python=3
 conda info --env
+ #conda env list
 ## remove enviroment
  #conda remove --name $env_name --all
 ## install packages
@@ -96,6 +97,7 @@ if [ $is_env_sampark -gt 0 ]; then
 	echo "ready to pip install modules at env '${env_name}'"
 	pip install -r modules.txt
 	## generate a new kernel
+ #	jupyter kernelspec list
 	python -m ipykernel install --user --name $env_name --display-name $env_name
 	## check the package installing
 	pip freeze
