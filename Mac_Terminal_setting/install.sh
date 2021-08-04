@@ -99,6 +99,7 @@ if [ $is_env_sampark -gt 0 ]; then
 	## generate a new kernel
  #	jupyter kernelspec list
 	python -m ipykernel install --user --name $env_name --display-name $env_name
+ #	jupyter kernelspec uninstall $env_name
 	## check the package installing
 	pip freeze
 else
