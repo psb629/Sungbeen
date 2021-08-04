@@ -97,6 +97,7 @@ if [ $is_env_sampark -gt 0 ]; then
 	echo "ready to pip install modules at env '${env_name}'"
 	pip install -r modules.txt
 	## generate a new kernel
+	pip install ipykernel
  #	jupyter kernelspec list
 	python -m ipykernel install --user --name $env_name --display-name $env_name
  #	jupyter kernelspec uninstall $env_name
