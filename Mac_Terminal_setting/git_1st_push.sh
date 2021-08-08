@@ -2,6 +2,7 @@
 
 ## Define a repository
 rep=labs
+rep=machine_learning
 
 ## Define Git directory (root)
 git_dir=~/Github
