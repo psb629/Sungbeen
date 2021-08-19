@@ -36,7 +36,9 @@ tmux (Terminal MUltipleXer)
 - 세션 종료, 세션 밖에서 실행
 
 `$ tmux kill-session -t session_name`
+
 ---
+
 ### Window 관련 tmux 명령어
 
 - 세션 생성 (이름은 숫자로 생성됨)
@@ -72,7 +74,9 @@ tmux (Terminal MUltipleXer)
 - 세션 종료, 세션 밖에서 실행
 
 `$ tmux kill-session -t session_name`
+
 ---
+
 ### Pane(팬) 관련 tmux 명령어
 
 - 세로 화면 분할
@@ -114,7 +118,9 @@ tmux (Terminal MUltipleXer)
 - 팬 레이아웃 변경 (다양한 레이아웃으로 자동 전환)
 
 `[Ctrl] + b, spacebar`
+
 ---
+
 ### 단축키 관련 명령
 
 - 단축키 목록
@@ -146,7 +152,9 @@ tmux (Terminal MUltipleXer)
 `[Ctrl] + b, :`
 
 `setw synchronize-panes on`
+
 ---
+
 ### 스크롤링
 
 - Copy 모드로 들어가기
